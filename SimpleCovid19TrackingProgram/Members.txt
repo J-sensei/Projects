@@ -1,0 +1,57 @@
+Member 1 - Liew Jiann Shen  1191100556
+Member 2 - Adam Koh Jia Le  1191101858
+
+Task Distribution
+---------------------------
+			
+1. Customer and shop	
+	i.Customer.java
+		{Adam-50%
+		 Jiann Sheng-50%}
+	ii.CustomerApp.java
+		{Adam-60%
+		 Jiann Sheng-40%}
+
+	iii.Login.java
+		{Adam-60%
+		 Jiann Sheng-40%}
+
+	iv.FileCsv.java	
+		{Adam-30%
+		 Jiann Shen-70%}
+
+	v.Person.java
+		{Adam-70%
+		 Jiann Shen-30%}
+
+	vi.Record.java
+		{Jiann Shen-60%
+		 Adam-40%}
+
+	vii.RecordHandle.java
+		{Adam-30%
+		 Jiann Shen-70%}
+
+	viii.Register.java
+		{Adam-50%
+		 Jiann Shen-50%}
+
+	ix.Shop.java
+		{Jiann Shen-70%
+		 Adam-30%}
+
+	x.ShopApp.java
+		{Adam-40%
+		 Jiann Shen-60%}
+
+	xi.Manager.java
+	   {Adam-70%
+	    Jiann Shen-30%}
+
+2. Admin
+	i.AdminApp.java
+	  {Jiann Shen-100%}
+
+
+3.Javadoc
+	{Adam-100%}		
