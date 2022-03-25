@@ -1,0 +1,226 @@
+.loading{
+	top:100%;
+}
+.inactive{
+	display:none;
+}
+button{
+	background:#D42A2A;
+	border:none;
+	border-radius:5px;
+	color:white;
+	font-size:19px;
+	padding:8px 18px;
+	-webkit-transition: .5s;
+			transition: .5s;
+}
+input:focus, textarea:focus, select:focus, button:focus{
+	outline: none;
+}
+button:hover{
+	background:white;
+	color:#D42A2A;
+	cursor:pointer;
+}
+.Form{
+	display:inline-block;
+}
+input{
+	background:transparent;
+	padding:10px;
+	border:none;
+	border-bottom:2px solid white;
+	color:white;
+}
+.All{
+	position:absolute;
+	left:50%;
+	-webkit-transform:translateX(-50%);
+			transform:translateX(-50%);
+	width:500px;
+	background:rgb(0, 0, 0);
+	height:1150px;
+}
+.MovieDetail{
+	position:relative;
+	width:400px;
+	left:calc(50% - 200px);
+	padding:20px;
+	color:white;
+}
+.MovieDetail table{
+	border-collapse:collapse;
+}
+.MovieDetail img{
+	width:200px;
+	height:auto;
+}
+.MovieDetail th{
+	padding:10px;
+	border:2px solid white;
+}
+.MovieDetail .tName{
+	background:#D42A2A;
+}
+.MovieDetail .tValue{
+    text-overflow: ellipsis;
+	width:200px;
+	text-align:center;
+	color:white;
+	font-size:15px;
+}
+.purchaseDetail{
+	border-top:2px solid white;
+	color:white;
+	padding:20px;
+	height:500px;
+}
+.purchaseDetail .Form input, select{
+	margin-bottom:20px;
+	text-align:center;
+}
+.purchaseDetail .Form{
+	position:relative;
+	left:50%;
+	transform:translateX(-50%);
+}
+.seatStruct{
+	position:relative;
+	top:30px;
+	left:50%;
+	-webkit-transform:translateX(-50%);
+}
+#seatBlock{
+	position:relative;
+	transform:translateX(-50%);
+	left:50%;
+}
+.seatGap{
+	display:block;
+	width:100px;
+}
+.screen{
+	display:block;
+	position:relative;
+	left:50%;
+	transform:translateX(-50%);
+	text-align:center;
+	font-size:18px;
+	margin-bottom:10px;
+	padding:5px;
+	width:80%;
+	background:#D42A2A;
+}
+#details{
+	display:none;
+	background:rgb(0,0,0);
+	width:400px;
+	position:absolute;
+	left:50%;
+	top:40%;
+	-webkit-transform:translate(-50%, -50%);
+			transform:translate(-50%, -50%);
+	color:white;
+	padding:20px 30px;
+	z-index:2;
+	text-align:center;
+}
+#details .title{
+	font-size:20px;
+}
+#details table{
+	border-collapse:collapse;
+	margin-bottom:10px;
+}
+#details table th{
+	border:2px solid white;
+	padding:10px 5px;
+}
+#details .name{
+	background:#D42A2A;
+}
+#success{
+	position:absolute;
+	padding:20px;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+			transform:translate(-50%, -50%);
+	text-align:center;
+	display:none;
+	width:300px;
+	color:white;
+	background:rgb(0,0,0);
+	font-size:25px;
+}
+#success span{
+	margin-bottom:20px;
+}
+#success button{
+	margin-top:15px;
+}
+.container{
+	padding:10px;
+	cursor:pointer;
+}
+.container input{
+	display:none;
+	cursor:pointer;
+}
+.check{
+	display:block;
+	position:relative;
+	left:10px;
+	background:transparent;
+	border:2px solid white;
+	height:15px;
+	width:15px;
+}
+.container:hover input ~ .check{
+	background-color:grey;
+}
+.container input:checked ~ .check{
+	background:green;
+	border:2px solid green;
+}
+.occupied{
+	background:red;
+	border:2px solid #D42A2A;
+}
+.poster{
+	margin-right:20%;
+}
+
+
+@media only screen and (max-width: 570px){
+	.seatGap{
+		width:50px;
+	}
+}
+@media only screen and (max-width: 470px){
+	.seatGap{
+		width:25px;
+	}
+}
+@media only screen and (max-width: 360px){
+	.All{
+		left:55%;
+	}
+	.container{
+		font-size:14px;
+	}
+	.check{
+		width:10px;
+		height:10px;
+	}
+}
+@media only screen and (max-width: 320px){
+	.All{
+		left:100%;
+	}
+}
+@media only screen and (max-width: 300px){
+	.All{
+		left:100%;
+	}
+}

@@ -1,0 +1,149 @@
+*{
+	padding:0;
+	margin:0;
+}
+input:focus, textarea:focus, select:focus, button:focus{
+	outline: none;
+}
+body,html{
+	min-height:100%;
+}
+body{
+	background-size:cover;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	margin:auto;
+	background-color: #333;
+}
+#sign-up-box{
+	display:none;
+}
+::-webkit-input-placeholder {
+  color: white;
+}
+.btn-group{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.btn-group button{
+	background:none;
+	background:transparent;
+	color:white;
+	padding:10px 15px;
+	border-color:white;
+	border-radius:5px;
+	font-size:18px;
+	-webkit-transition: .5s;
+			transition: .5s;
+}
+.btn-group button:hover{
+	cursor:pointer;
+	border-color:#D42A2A;
+	background:#D42A2A;
+}
+.btn-group .selected{
+	border-color:#D42A2A;
+	background:#D42A2A;
+}
+.box{
+	width:400px;
+	height:380px;
+	padding:70px 30px;
+	background:rgb(0,0,0);
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+	color:white;
+
+}
+.info input{
+	color:white;
+	width:100%;
+	margin-bottom:30px;
+	background:none;
+	border:none;
+	border-bottom:2px solid #808080;
+	padding:15px 0px;
+	font-size:18px;
+	-webkit-transition: .5s;
+			transition: .5s;
+}
+.info input:focus{
+	border-bottom:2px solid white;	
+}
+.info{
+	position:relative;
+}
+.info label{
+	position:absolute;
+	top: 5px;
+	left: 0;
+	padding: 10px 0;
+	font-size: 18px;
+	pointer-events: none;
+	-webkit-transition: .5s;
+			transition: .5s;
+}
+.info input:focus + label, .info input:valid + label{
+	top:-18px;
+	font-size:15px;
+	color:#D42A2A;
+}
+.box input[type=submit]{
+	width:30%;
+	position:relative;
+	left:50%;
+	-webkit-transform: translate(-50%, 0);
+			transform: translate(-50%, 0);
+	background:none;
+	background:#D42A2A;
+	border:none;
+	border-radius:5px;
+	color:white;
+	font-weight:bold;
+	font-size:19px;
+	padding:8px 18px;
+	-webkit-transition: .5s;
+			transition: .5s;
+}
+.box input[type=submit]:hover{
+	background:white;
+	color:#D42A2A;
+	cursor:pointer;
+}
+#message, #message2{
+	position:relative;
+	bottom:10px;
+	font-size:18px;
+	pointer-events:none;
+	-webkit-transition: .5s;
+			transition: .5s;	
+}
+
+@media only screen and (max-width: 625px){
+	.box{
+		width:300px;
+	}
+	.box input[type=submit]{
+		width:100px;
+	}
+}
+@media only screen and (max-width: 500px){
+	.box{
+		width:200px;
+		height:auto;
+	}
+	.btn-group button{
+		margin-bottom:15px;
+	}
+	#message, #message2{
+		position:relative;
+		bottom:10px;
+		font-size:15px;
+		pointer-events:none;
+		-webkit-transition: .5s;
+				transition: .5s;	
+	}
+}
