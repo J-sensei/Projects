@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginRegisterController">
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4da0ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="65.0" layoutY="273.0" mnemonicParsing="false" onAction="#goToLogin" style="-fx-background-color: #ffffff;" text="Login">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="16.0" layoutY="195.0" prefHeight="62.0" prefWidth="167.0" text="Already Registered?" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="148.0" fitWidth="167.0" layoutX="16.0">
+               <image>
+                  <Image url="@../assets/house.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="306.0" layoutY="416.0" mnemonicParsing="false" onAction="#registerButton" style="-fx-background-color: #4da0ff;" text="Register" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="username" layoutX="381.0" layoutY="170.0" promptText="username" />
+            <PasswordField fx:id="password" layoutX="380.0" layoutY="216.0" promptText="password" />
+            <TextField fx:id="name" layoutX="380.0" layoutY="307.0" promptText="name" />
+            <TextField fx:id="phone" layoutX="381.0" layoutY="353.0" promptText="e.g 0123456789" />
+            <Label layoutX="224.0" layoutY="170.0" prefHeight="27.0" prefWidth="118.0" text="Username:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="224.0" layoutY="216.0" prefHeight="27.0" prefWidth="118.0" text="Password:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="224.0" layoutY="307.0" prefHeight="27.0" prefWidth="118.0" text="Full Name:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="224.0" layoutY="353.0" prefHeight="27.0" prefWidth="118.0" text="Phone:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="306.0" layoutY="33.0" prefHeight="36.0" prefWidth="148.0" text="Registration" textFill="#4da0ff">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="224.0" layoutY="122.0" prefHeight="27.0" prefWidth="118.0" text="Register as:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="userSelectType" layoutX="380.0" layoutY="122.0" onAction="#getSelection" prefWidth="150.0" promptText="userSelectType" />
+            <PasswordField fx:id="confirmPassword" layoutX="380.0" layoutY="261.0" promptText="confirm password" />
+            <Label layoutX="224.0" layoutY="260.0" prefHeight="27.0" prefWidth="165.0" text="Confirm Password:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="message" layoutX="224.0" layoutY="81.0" prefHeight="27.0" prefWidth="312.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

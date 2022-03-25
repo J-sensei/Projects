@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyPropertyController">
+   <top>
+      <AnchorPane prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #4da0ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="382.0" layoutY="38.0" text="My Property" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button layoutX="815.0" layoutY="36.0" mnemonicParsing="false" onAction="#goToMenu" style="-fx-background-color: #ffffff;" text="Menu">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="propertyType" layoutX="14.0" layoutY="43.0" onAction="#selectPropertyType" prefHeight="26.0" prefWidth="190.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <TableView fx:id="property" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="44.000001549720764" text="ID" />
+            <TableColumn fx:id="address" prefWidth="280.0" text="Address" />
+            <TableColumn fx:id="postcode" prefWidth="81.5999755859375" text="Postcode" />
+            <TableColumn fx:id="type" prefWidth="125.60000610351562" text="Type" />
+            <TableColumn fx:id="price" prefWidth="63.20001220703125" text="Price(RM)" />
+            <TableColumn fx:id="pendingTenant" prefWidth="118.39996337890625" text="No. Pending Tenant" />
+            <TableColumn fx:id="status" minWidth="0.0" prefWidth="50.0" text="Status" />
+            <TableColumn fx:id="detail" maxWidth="-1.0" minWidth="60.0" prefWidth="60.0" text="Detail" />
+            <TableColumn fx:id="edit" maxWidth="-1.0" minWidth="60.0" prefWidth="60.0" text="Edit" />
+            <TableColumn fx:id="delete" maxWidth="-1.0" minWidth="60.0" prefWidth="60.0" text="Delete" />
+            <TableColumn fx:id="approve" maxWidth="-1.0" minWidth="60.0" prefWidth="60.0" text="Approve" />
+            <TableColumn fx:id="drop" maxWidth="-1.0" minWidth="60.0" prefWidth="60.0" text="Drop" />
+            <TableColumn fx:id="hidden" maxWidth="-1.0" minWidth="60.0" prefWidth="60.0" text="Hidden" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

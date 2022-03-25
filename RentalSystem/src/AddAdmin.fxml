@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddAdminController">
+   <top>
+      <AnchorPane prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #4da0ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="387.0" layoutY="38.0" text="Add Admin" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button layoutX="820.0" layoutY="36.0" mnemonicParsing="false" onAction="#goToMenu" style="-fx-background-color: #ffffff;" text="Menu">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="283.0" layoutY="65.0" text="Username:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="285.0" layoutY="114.0" text="Password:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="251.0" layoutY="162.0" text="Confirm Password:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="414.0" layoutY="66.0" promptText="username" />
+            <Button layoutX="421.0" layoutY="235.0" mnemonicParsing="false" onAction="#add" text="Add">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="message" layoutX="292.0" layoutY="25.0" prefHeight="27.0" prefWidth="257.0" textAlignment="JUSTIFY" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="414.0" layoutY="115.0" promptText="password" />
+            <PasswordField fx:id="confirmPassword" layoutX="414.0" layoutY="163.0" promptText="confirm password" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

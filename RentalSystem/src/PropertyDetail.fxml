@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="502.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="41.0" layoutY="64.0" text="Address:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="124.0" text="Type:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="182.0" text="No. Room:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="244.0" text="Price:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="address" layoutX="158.0" layoutY="64.0" prefHeight="27.0" prefWidth="672.0" text="A-2-3, X Condo, Taman ABC">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="type" layoutX="158.0" layoutY="124.0" text="Condominium">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="room" layoutX="156.0" layoutY="182.0" prefHeight="27.0" prefWidth="78.0" text="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="price" layoutX="188.0" layoutY="244.0" prefHeight="27.0" prefWidth="87.0" text="700">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="175.0" layoutY="385.0" text="Facilities" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="419.0" prefHeight="27.0" prefWidth="152.0" text="Swimming Pool:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="bathRoom" layoutX="155.0" layoutY="212.0" prefHeight="27.0" prefWidth="106.0" text="bath room">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="212.0" text="No. Bath Room:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="14.0" text="ID:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="id" layoutX="53.0" layoutY="14.0" prefHeight="27.0" prefWidth="142.0" text="id">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="154.0" layoutY="244.0" text="RM" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="452.0" prefHeight="27.0" prefWidth="152.0" text="Air Conditioner:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="240.0" layoutY="419.0" prefHeight="27.0" prefWidth="54.0" text="Wi-Fi:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="452.0" prefHeight="27.0" prefWidth="122.0" text="Water Heater:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="pool" layoutX="161.0" layoutY="419.0" prefHeight="27.0" prefWidth="87.0" text="Yes">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="airCon" layoutX="161.0" layoutY="452.0" prefHeight="27.0" prefWidth="87.0" text="Yes">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="wifi" layoutX="349.0" layoutY="419.0" prefHeight="27.0" prefWidth="87.0" text="Yes">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="waterHeater" layoutX="349.0" layoutY="452.0" prefHeight="27.0" prefWidth="87.0" text="Yes">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="image" fitHeight="283.0" fitWidth="455.0" layoutX="453.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Sample.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="42.0" layoutY="300.0" text="Status:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="status" layoutX="160.0" layoutY="300.0" prefHeight="27.0" prefWidth="95.0" text="Active">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="331.0" prefHeight="27.0" prefWidth="134.0" text="Tenant Renting:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="tenant" layoutX="159.0" layoutY="331.0" prefHeight="27.0" prefWidth="95.0" text="Active">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="357.0" layoutY="8.0" prefHeight="40.0" prefWidth="186.0" text="Property Details" textFill="#4da0ff">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Line endX="717.199951171875" endY="-7.62939453125E-6" layoutX="141.0" layoutY="53.0" startX="-100.0" stroke="#4da0ff" strokeWidth="3.0" />
+            <Line endX="78.4000244140625" layoutX="217.0" layoutY="382.0" startX="-100.0" stroke="#4da0ff" strokeWidth="3.0" />
+            <Label layoutX="40.0" layoutY="97.0" text="Postcode:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="postcode" layoutX="160.0" layoutY="97.0" text="99999">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="154.0" text="Size:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="size" layoutX="157.0" layoutY="154.0" prefHeight="27.0" prefWidth="50.0" text="00">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="638.0" layoutY="404.0" text="Comment " textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="comment" layoutX="429.0" layoutY="436.0" prefHeight="31.0" prefWidth="455.0" text="Comment">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="273.0" endY="3.0517578125E-5" layoutX="577.0" layoutY="397.0" startX="-100.0" stroke="#4da0ff" strokeWidth="3.0" />
+            <Label layoutX="223.0" layoutY="154.0" prefHeight="27.0" prefWidth="130.0" text="square meter" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="602.0" layoutY="14.0" text="Owner/Agent:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="username" layoutX="719.0" layoutY="14.0" prefHeight="27.0" prefWidth="142.0" text="username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="259.0" layoutY="244.0" prefHeight="27.0" prefWidth="98.0" text="/ month" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="271.0" text="Rental Rate:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="rentalRate" layoutX="187.0" layoutY="271.0" prefHeight="27.0" prefWidth="95.0" text="rentalrate">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="155.0" layoutY="271.0" text="RM" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

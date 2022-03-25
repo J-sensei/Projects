@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #4da0ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="378.0" layoutY="32.0" text="Edit Property" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="32.0" text="ID:" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="id" layoutX="44.0" layoutY="32.0" text="id" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="address" layoutX="168.0" layoutY="15.0" prefHeight="26.0" prefWidth="414.0" />
+            <TextField fx:id="postcode" layoutX="168.0" layoutY="51.0" />
+            <TextField fx:id="size" layoutX="168.0" layoutY="84.0" />
+            <TextField fx:id="room" layoutX="168.0" layoutY="155.0" />
+            <Label layoutX="47.0" layoutY="13.0" text="Address: " textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="49.0" text="Postcode:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="117.0" text="Type: " textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="82.0" prefHeight="27.0" prefWidth="44.0" text="Size: " textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="154.0" text="No. Room:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="193.0" text="No. Bath Room:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="230.0" text="Price:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bathRoom" layoutX="168.0" layoutY="194.0" />
+            <TextField fx:id="price" layoutX="168.0" layoutY="231.0" />
+            <Label layoutX="168.0" layoutY="275.0" text="Facilities" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="pool" layoutX="18.0" layoutY="314.0" mnemonicParsing="false" text="Swimming Pool" textFill="#4da0ff">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="airCon" layoutX="19.0" layoutY="352.0" mnemonicParsing="false" text="Air Conditioner" textFill="#4da0ff">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="wifi" layoutX="211.0" layoutY="314.0" mnemonicParsing="false" text="Wi-Fi" textFill="#4da0ff">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="waterHeater" layoutX="211.0" layoutY="352.0" mnemonicParsing="false" text="Water Heater" textFill="#4da0ff">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <Button layoutX="699.0" layoutY="332.0" mnemonicParsing="false" onAction="#save" text="Save">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="type" layoutX="168.0" layoutY="118.0" prefWidth="150.0" />
+            <Label layoutX="137.0" layoutY="230.0" text="RM" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="message" layoutX="595.0" layoutY="14.0" prefHeight="27.0" prefWidth="290.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="423.0" layoutY="117.0" text="Status:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="status" layoutX="503.0" layoutY="117.0" text="STATUS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="423.0" layoutY="154.0" text="Tenant:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="tenant" layoutX="503.0" layoutY="154.0" text="STATUS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="kick" disable="true" layoutX="474.0" layoutY="200.0" mnemonicParsing="false" onAction="#kick" text="Kick">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

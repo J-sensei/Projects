@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddPropertyController">
+   <top>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #4da0ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="376.0" layoutY="38.0" text="Add Property" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="288.0" prefWidth="276.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="127.0" layoutY="194.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="136.0" layoutY="108.0" mnemonicParsing="false" onAction="#add" text="Add">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="message" layoutX="13.0" layoutY="55.0" prefHeight="27.0" prefWidth="277.0" textFill="#f20808">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="288.0" prefWidth="329.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="address" layoutX="159.0" layoutY="14.0" prefHeight="26.0" prefWidth="482.0" promptText="address" />
+            <TextField fx:id="price" layoutX="159.0" layoutY="286.0" promptText="RmXXXX" />
+            <Label layoutX="39.0" layoutY="14.0" text="Address:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="101.0" text="Type:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="roomNo" layoutX="160.0" layoutY="148.0" promptText="number of room" />
+            <Label layoutX="26.0" layoutY="146.0" text="No. Room:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="286.0" text="Price:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="houseType" layoutX="159.0" layoutY="105.0" prefWidth="150.0" />
+            <Label layoutX="41.0" layoutY="58.0" text="Postcode:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="postcode" layoutX="160.0" layoutY="58.0" promptText="postcode" />
+            <Label layoutX="50.0" layoutY="243.0" text="Size:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="size" layoutX="159.0" layoutY="243.0" prefHeight="26.0" prefWidth="151.0" promptText="size of the house" />
+            <Label layoutX="335.0" layoutY="54.0" text="Facilities:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="poolBox" layoutX="346.0" layoutY="94.0" mnemonicParsing="false" text="Swimming Pool" textFill="#4da0ff">
+               <font>
+                  <Font size="15.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="airconBox" layoutX="500.0" layoutY="94.0" mnemonicParsing="false" text="Aircon" textFill="#4da0ff">
+               <font>
+                  <Font size="15.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="wifiBox" layoutX="346.0" layoutY="138.0" mnemonicParsing="false" text="Wi-Fi" textFill="#4da0ff">
+               <font>
+                  <Font size="15.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="waterHeaterBox" layoutX="500.0" layoutY="138.0" mnemonicParsing="false" text="Water Heater" textFill="#4da0ff">
+               <font>
+                  <Font size="15.0" />
+               </font></CheckBox>
+            <TextField fx:id="bathNo" layoutX="159.0" layoutY="195.0" promptText="number of bath room" />
+            <Label layoutX="10.0" layoutY="194.0" text="No. Bath Room:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="321.0" layoutY="242.0" prefHeight="27.0" prefWidth="115.0" text="Square Meter" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="121.0" layoutY="286.0" prefHeight="27.0" prefWidth="29.0" text="RM" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="226.0" layoutY="342.0" mnemonicParsing="false" onAction="#selectImage" text="Select Image" />
+            <Label layoutX="18.0" layoutY="341.0" text="Upload Image (Optional):" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="filename" layoutX="321.0" layoutY="341.0" prefHeight="27.0" prefWidth="310.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

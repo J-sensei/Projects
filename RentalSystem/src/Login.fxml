@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginRegisterController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4da0ff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/house.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="56.0" layoutY="273.0" mnemonicParsing="false" onAction="#goToRegister" style="-fx-background-color: #ffffff;" text="Sign Up">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="58.0" layoutY="220.0" prefHeight="27.0" prefWidth="98.0" text="New User?" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="315.0" layoutY="314.0" mnemonicParsing="false" onAction="#loginButton" style="-fx-background-color: #4da0ff;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="username" layoutX="307.0" layoutY="199.0" promptText="username" />
+            <Label layoutX="208.0" layoutY="198.0" prefHeight="27.0" prefWidth="98.0" text="Username:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="208.0" layoutY="250.0" prefHeight="27.0" prefWidth="98.0" text="Password:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="307.0" layoutY="251.0" promptText="password" />
+            <Label layoutX="300.0" layoutY="37.0" prefHeight="27.0" prefWidth="98.0" text="Login" textFill="#4da0ff">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="208.0" layoutY="147.0" prefHeight="27.0" prefWidth="98.0" text="Login as:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="userSelectType" layoutX="307.0" layoutY="148.0" onAction="#getSelection" prefWidth="150.0" />
+            <Label fx:id="message" layoutX="208.0" layoutY="99.0" prefHeight="27.0" prefWidth="252.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

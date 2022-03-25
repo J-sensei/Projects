@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RentPropertyController">
+   <top>
+      <AnchorPane prefHeight="112.0" prefWidth="200.0" style="-fx-background-color: #4da0ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="345.0" layoutY="38.0" text="Rent Property" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button layoutX="815.0" layoutY="36.0" mnemonicParsing="false" onAction="#goToMenu" style="-fx-background-color: #ffffff;" text="Menu">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <TableView fx:id="property" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="44.000001549720764" text="ID" />
+          <TableColumn fx:id="username" prefWidth="83.99996185302734" text="Agent/Owner" />
+            <TableColumn fx:id="address" prefWidth="287.2000427246094" text="Address" />
+            <TableColumn fx:id="postcode" prefWidth="81.5999755859375" text="Postcode" />
+            <TableColumn fx:id="type" prefWidth="125.60000610351562" text="Type" />
+            <TableColumn fx:id="size" prefWidth="59.20001220703125" text="Size" />
+            <TableColumn fx:id="price" prefWidth="67.199951171875" text="Price(RM)" />
+            <TableColumn fx:id="detail" prefWidth="57.5999755859375" text="Detail" />
+            <TableColumn fx:id="apply" prefWidth="92.0" text="Apply" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

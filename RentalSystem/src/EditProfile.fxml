@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditProfileController">
+   <top>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #4da0ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="390.0" layoutY="38.0" text="Edit Profile" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <!-- <TextField layoutX="264.0" layoutY="15.0" promptText="username" text="Sample" /> -->
+            <Label fx:id="usernameLabel" layoutX="422.0" layoutY="58.0" text="&lt;username&gt;" textFill="#000000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" disable="true" layoutX="422.0" layoutY="101.0" promptText="New Password" />
+            <PasswordField fx:id="confirmPassword" disable="true" layoutX="422.0" layoutY="144.0" promptText="Confirm Password" />
+            <TextField fx:id="fullName" disable="true" layoutX="421.0" layoutY="185.0" promptText="Full Name" />
+            <Label layoutX="319.0" layoutY="54.0" text="Username:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="283.0" layoutY="100.0" text="New Password:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="255.0" layoutY="143.0" text="Confirm Password:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="319.0" layoutY="184.0" text="Full Name:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveButton" disable="true" layoutX="331.0" layoutY="268.0" mnemonicParsing="false" onAction="#updateProfile" text="Save">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="497.0" layoutY="268.0" mnemonicParsing="false" onAction="#backToMain" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="phone" disable="true" layoutX="421.0" layoutY="228.0" promptText="Phone Number" />
+            <Label fx:id="phoneLabel" layoutX="348.0" layoutY="227.0" text="Phone:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ToggleButton layoutX="598.0" layoutY="101.0" mnemonicParsing="false" onAction="#toggleEditButtonPassword" text="Edit" />
+            <ToggleButton fx:id="nameEdit" layoutX="598.0" layoutY="185.0" mnemonicParsing="false" onAction="#toggleEditButtonFullName" text="Edit" />
+            <ToggleButton fx:id="phoneEdit" layoutX="598.0" layoutY="228.0" mnemonicParsing="false" onAction="#toggleEditButtonPhone" text="Edit" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminPageController">
+   <top>
+      <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #4da0ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="34.0" layoutY="31.0" text="Welcome, " textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="150.0" layoutY="31.0" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button layoutX="805.0" layoutY="29.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #ffffff;" text="Logout">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="673.0" layoutY="29.0" mnemonicParsing="false" onAction="#editProfile" style="-fx-background-color: #ffffff;" text="EditProfile">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="302.0" prefWidth="294.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="30.0" layoutY="89.0" mnemonicParsing="false" onAction="#goToApproveProperty" prefWidth="235.0" style="-fx-background-color: #4da0ff;" text="Approve Pending Property" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="29.0" layoutY="231.0" mnemonicParsing="false" onAction="#goCommentProperty" prefHeight="15.0" prefWidth="235.0" style="-fx-background-color: #4da0ff;" text="Comment Property" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="29.0" layoutY="160.0" mnemonicParsing="false" onAction="#goToManageProperty" prefWidth="235.0" style="-fx-background-color: #4da0ff;" text="Manage Property" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="113.0" layoutY="35.0" text="Property" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="302.0" prefWidth="305.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="52.0" layoutY="286.0" mnemonicParsing="false" onAction="#goToReport" prefWidth="235.0" style="-fx-background-color: #4da0ff;" text="View Report" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="52.0" layoutY="153.0" mnemonicParsing="false" onAction="#goToAddAdmin" prefWidth="235.0" style="-fx-background-color: #4da0ff;" text="Add Admin" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="52.0" layoutY="85.0" mnemonicParsing="false" onAction="#goToReview" prefWidth="235.0" style="-fx-background-color: #4da0ff;" text="Review Pending User" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="134.0" layoutY="39.0" text="User" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="134.0" layoutY="246.0" text="Report" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="110.0" text="No. Pending Property:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="82.0" text="No. Pending User:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="200.0" text="No. Users: " textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="172.0" text="No. Property:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="pendingUser" layoutX="208.0" layoutY="82.0" prefHeight="27.0" prefWidth="77.0" text="0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="pendingProperty" layoutX="208.0" layoutY="110.0" prefHeight="27.0" prefWidth="77.0" text="0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="user" layoutX="208.0" layoutY="200.0" prefHeight="27.0" prefWidth="77.0" text="0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="property" layoutX="208.0" layoutY="172.0" prefHeight="27.0" prefWidth="77.0" text="0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="227.0" text="No. Admin:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="254.0" text="No. Agent:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="281.0" text="No. Owner:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="308.0" text="No. Tenant:" textFill="#4da0ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="admin" layoutX="209.0" layoutY="227.0" prefHeight="27.0" prefWidth="75.0" text="0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="agent" layoutX="209.0" layoutY="254.0" prefHeight="27.0" prefWidth="75.0" text="0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="owner" layoutX="209.0" layoutY="281.0" prefHeight="27.0" prefWidth="75.0" text="0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="tenant" layoutX="209.0" layoutY="308.0" prefHeight="27.0" prefWidth="75.0" text="0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
