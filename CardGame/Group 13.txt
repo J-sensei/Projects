@@ -1,0 +1,20 @@
+Group 13
+---------
+
+Member
+--------
+1.Liew Jiann Sheng				(1191100556)
+2.Adam Koh Jia Le				(1191101858)
+3.MUHAMMAD LUQMAN BIN ZAINON @ MOHD RASTAM	(1191100953)
+
+Task Distribution
+-----------------
+1. Sorting and determining the highest point			(Liew jiann shen,adam koh)
+2. Dealing of cards and identify the winner in each round	(Liew jiann shen)
+3. Sum of score 	(liew jiann shen)
+4. card image		(liew jiann shen)
+5. card class		(luqman)
+6. main program		(liew jiann shen,adam koh,luqman)
+7. player class		(liew jiann shen,adam koh)
+8. game class		(liew jiann shen,adam koh,luqman)
+9. shuffle cards	(adam koh)

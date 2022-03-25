@@ -1,0 +1,9 @@
+javafx version: javafx-sdk-11.0.2
+
+Please open command prompt inside project folder to run following command
+-------------------------------------------------------------------------
+To compile the program: javac --module-path C:\javafx-sdk-11.0.2\lib --add-modules=javafx.controls Main.java
+To run the program: java --module-path C:\javafx-sdk-11.0.2\lib --add-modules=javafx.controls Main
+
+Replace C:\javafx-sdk-11.0.2\lib with ur javafx library location
+
