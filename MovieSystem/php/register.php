@@ -10,7 +10,7 @@
 				
 				if($search->num_rows == 0){
 					$password = $con->real_escape_string(password_hash($_POST['password'], PASSWORD_BCRYPT));
-					die($password);
+					//die($password);
 					$sql = $con->query("INSERT INTO users(username, password) VALUES('$username', '$password')");
 					
 					if($sql){

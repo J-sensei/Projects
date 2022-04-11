@@ -154,7 +154,7 @@
 					method:'POST',
 					data:{showing:showing, page:page, genre:genre, search:search},
 					success:function(data){
-						alert(data);
+						//alert(data);
 						$('#result').html(data);
 						$('.page1').removeClass('selected');
 						$('.page'+pageNum).addClass('selected');
